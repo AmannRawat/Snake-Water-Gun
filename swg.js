@@ -1,3 +1,4 @@
+//Generating Random computer choice as Output
 var num = Math.floor(Math.random() * 100 + 1)
 console.log(num)
 if (num < 35) {
@@ -11,6 +12,7 @@ else {
 }
 console.log(output);
 
+//Receiving  User choice as Input
 var snake = document.getElementById("img1")
 snake.addEventListener("click", () => {
     var input = "Snake"
@@ -29,6 +31,8 @@ gun.addEventListener("click", () => {
     console.log(input);
     return input
 })
+
+//Play Button Giving Resultss 
 var btn=document.getElementById('btn');
 btn.addEventListener("click", (input,output) => {
     if (input == "Snake" && output == "Water" || input == "Water" && output == "Gun" || input == "Gun" && output == "Snake") {
