@@ -1,52 +1,62 @@
 //Generating Random computer choice as Output
 var num = Math.floor(Math.random() * 100 + 1)
 console.log(num)
+let input = ""
+let output = ""
 if (num < 35) {
-    var output = "Snake";
+    output = "Snake";
+    // var comp=document.getElementById
 }
 else if (num > 70) {
-    var output = "Water";
+    output = "Water";
 }
 else {
-    var output = "Gun";
+    output = "Gun";
 }
 console.log(output);
 
 //Receiving  User choice as Input
 var snake = document.getElementById("img1")
 snake.addEventListener("click", () => {
-    var input = "Snake"
+    input = "Snake"
     console.log(input);
     return input
 })
 var water = document.getElementById("img2")
 water.addEventListener("click", () => {
-    var input = "Water"
+    input = "Water"
     console.log(input);
     return input
 })
 var gun = document.getElementById("img3")
 gun.addEventListener("click", () => {
-    var input = "Gun"
+    input = "Gun"
     console.log(input);
     return input
 })
 
-//Play Button Giving Resultss 
-var btn=document.getElementById('btn');
-btn.addEventListener("click", (input,output) => {
+
+//Play Button Giving Results
+var btn = document.getElementById('btn');
+btn.addEventListener("click", () => {
     if (input == "Snake" && output == "Water" || input == "Water" && output == "Gun" || input == "Gun" && output == "Snake") {
-        alert("You Win")
+        let win = document.getElementById('win');;
+        win.style.display = "block"
     }
     else if (input == "Snake" && output == "Gun" || input == "Water" && output == "Snake" || input == "Gun" && output == "Water") {
-        alert("You loose")
+        let lose = document.getElementById('lose');;
+        lose.style.display = "block"
     }
     else if (input == output) {
-        alert("Draw")
+        let tie = document.getElementById('tie');;
+        tie.style.display = "block"
     }
     else {
-        alert("Enter Valid input")
-        console.log(input);     
-        console.log(output);     
+        alert("Choose one")
+        console.log(input);
+        console.log(output);
     }
+    setTimeout(() => {
+        location.reload();
+      }, 2300);
 })
