@@ -42,28 +42,28 @@ body {
 }
 
 #win {
-    width: 36vw;
+    width: 45%;
     position: absolute;
-    left: 408px;
-    top: 127px;
+    margin: auto;
+    top: 0px;
     z-index: 99;
     display: none;
 }
 
 #lose {
-    width: 36vw;
+    width: 45%;
     position: absolute;
-    left: 401px;
-    top: 131px;
+    margin: auto;
+    top: 0px;
     z-index: 99;
     display: none;
 }
 
 #tie {
-    width: 36vw;
+    width: 45%;
     position: absolute;
-    left: 401px;
-    top: 131px;
+    margin: auto;
+    top: 0px;
     z-index: 99;
     display: none;
 }
@@ -76,7 +76,7 @@ body {
     gap: 16vw;
     height: 70vh;
     bottom: 25px;
-    left: 20px;
+    left: 10px;
     width: 80vw;
     margin: auto;
 }
@@ -162,7 +162,7 @@ body {
 #btn {
     font-size: 3.5vw;
     padding: 0.7vw 3vw;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: rgb(233 31 72);
     border: none;
     color: white;
@@ -183,7 +183,7 @@ body {
     position: relative;
     bottom: 2px;
     transition: all .1s linear;
-    outline: 8px outset rgb(246, 255, 0);
+    outline: 5px outset rgb(246, 255, 0);
     background-color: rgb(255, 0, 51);
 }
 
@@ -303,21 +303,15 @@ footer .img {
     }
 
     #win {
-        width: 40vw;
-        left: 220px;
-        top: 300px;
+        width: 75%;
     }
 
     #lose {
-        width: 40vw;
-        left: 220px;
-        top: 300px;
+        width: 75%;
     }
 
     #tie {
-        width: 40vw;
-        left: 220px;
-        top: 300px;
+        width: 75%;
     }
 
 }
@@ -407,21 +401,15 @@ footer .img {
     }
 
     #win {
-        width: 45vw;
-        left: 160px;
-        top: 220px;
+        width: 80%;
     }
 
     #lose {
-        width: 45vw;
-        left: 160px;
-        top: 220px;
+        width: 80%;
     }
 
     #tie {
-        width: 45vw;
-        left: 160px;
-        top: 220px;
+        width: 80%;
     }
 }
 
@@ -435,20 +423,20 @@ footer .img {
     }
 
     #win {
-        width: 55vw;
-        left: 100px;
-        top: 300px;
+        width: 92%;
     }
 
     #lose {
-        width: 55vw;
-        left: 100px;
-        top: 300px;
+        width: 92%;
     }
 
     #tie {
-        width: 55vw;
-        left: 100px;
-        top: 300px;
+        width: 92%;
+    }
+
+    #btn {
+        font-size: 6vw;
+        padding: 2.3vw 6vw;
+        outline: 3px outset rgb(246, 255, 0);
     }
 }
