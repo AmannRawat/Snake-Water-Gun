@@ -439,7 +439,8 @@ footer .img {
         font-size: 6vw;
         padding: 2.3vw 6vw;
     }
-    #btn:hover{
+    #btn:focus{
+        padding: 2.4vw 6.5vw;
         outline: 3px outset rgb(246, 255, 0);
     }
 }
