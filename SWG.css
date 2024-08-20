@@ -416,6 +416,7 @@ footer .img {
 @media only screen and (max-width: 450px) {
     .choices {
         height: 42vh;
+        left: 10px;
     }
 
     footer {
@@ -437,6 +438,8 @@ footer .img {
     #btn {
         font-size: 6vw;
         padding: 2.3vw 6vw;
+    }
+    #btn:hover{
         outline: 3px outset rgb(246, 255, 0);
     }
 }
