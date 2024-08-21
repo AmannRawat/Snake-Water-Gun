@@ -1,20 +1,24 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Lilita One", sans-serif;
-    font-weight: 400;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 800;
     font-style: normal;
+
 }
 
 body {
-    background-image: linear-gradient(rgba(119, 255, 0, 0.849), rgb(124 227 255));
-    /* height: 100%; */
+    /* background-image: url(Assets/background.webp); */
+    background-image: url(Assets/Wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .text1 {
     color: white;
     text-align: center;
-    font-size: 5rem;
+    font-size: 5.5rem;
     text-shadow: 4px 4px 5px red;
 }
 
@@ -24,10 +28,11 @@ body {
     font-size: 2.4rem;
     position: relative;
     margin-top: 2.2rem;
-    text-shadow: 4px 4px 5px rgb(0, 191, 255);
+    text-shadow: 4px 4px 5px  rgb(0 30 255);
 }
 
 .bear1 {
+    cursor: pointer;
     position: absolute;
     top: 10px;
     right: 40px;
@@ -35,6 +40,7 @@ body {
 }
 
 .bear2 {
+    cursor: pointer;
     position: absolute;
     top: 10px;
     left: 40px;
@@ -48,6 +54,7 @@ body {
     top: 0px;
     z-index: 99;
     display: none;
+    border-radius: 30px;
 }
 
 #lose {
@@ -57,6 +64,7 @@ body {
     top: 0px;
     z-index: 99;
     display: none;
+    border-radius: 30px;
 }
 
 #tie {
@@ -66,19 +74,24 @@ body {
     top: 0px;
     z-index: 99;
     display: none;
+    border-radius: 30px;
 }
 
 .choices {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     gap: 16vw;
-    height: 70vh;
-    bottom: 25px;
-    left: 10px;
-    width: 80vw;
+    height: 80vh;
+    left: 33px;
+    width: 90%;
     margin: auto;
+    z-index: 1;
+    border-radius: 40px;
 }
 
 #img1 {
@@ -160,18 +173,19 @@ body {
 }
 
 #btn {
-    font-size: 3.5vw;
-    padding: 0.7vw 3vw;
+    z-index: 2;
+    font-size: 3.1vw;
+    padding: 0.4vw 2.8vw;
     border-radius: 15px;
     background-color: rgb(233 31 72);
-    border: none;
+    border: 2px solid rgb(0, 0, 0);
     color: white;
     cursor: pointer;
     transition: all 1s linear;
 }
 
 #btn:hover {
-    padding: 1vw 4vw;
+    padding: 0.7vw 3.5vw;
     position: relative;
     bottom: 2px;
     transition: all .4s linear;
@@ -179,11 +193,41 @@ body {
 }
 
 #btn:focus {
-    padding: 1.1vw 4vw;
+    padding: 0.8vw 4vw;
     position: relative;
     bottom: 2px;
+    left: 1px;
+    outline: 4px outset rgb(246, 255, 0);
+    background-color: rgb(255, 0, 51);
+    transition: outline .1s linear , left 0.7s linear;
+}
+
+#playAgainBtn {
+    z-index: 2;
+    display: none;
+    left: 0px;
+    font-size: 2vw;
+    padding: 1.5vw 2vw;
+    border-radius: 15px;
+    background-color: rgb(233 31 72);
+    border: 2px solid rgb(0, 0, 0);
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    transition: all 1s linear;
+    transition: left 1s linear;
+}
+
+#playAgainBtn:hover {
+    font-size: 2.2vw;
+    transition: all .4s linear;
+    background-color: rgb(255, 0, 51);
+}
+
+#playAgainBtn:focus {
+    font-size: 2.2vw;
     transition: all .1s linear;
-    outline: 5px outset rgb(246, 255, 0);
+    outline: 4px outset rgb(246, 255, 0);
     background-color: rgb(255, 0, 51);
 }
 
@@ -206,7 +250,7 @@ footer {
 }
 
 .text3 {
-    text-shadow: 4px 4px 5px rgb(0 30 255);
+    text-shadow: 4px 4px 5px rgb(163 2 202);
 }
 
 .btn2 {
@@ -284,6 +328,19 @@ footer .img {
 
     #btn:focus {
         padding: 1.1vw 4.5vw;
+    }
+
+    #playAgainBtn {
+        font-size: 1.4rem;
+        padding: 2.5vw 3vw;
+    }
+
+    #playAgainBtn:hover {
+        padding: 2.7vw 3.5vw;
+    }
+
+    #playAgainBtn:focus {
+        padding: 2.8vw 3.5vw;
     }
 
     footer {
@@ -371,16 +428,29 @@ footer .img {
     }
 
     #btn {
-        font-size: 4vh;
-        padding: 0.7vh 3vh;
+        font-size: 5vh;
+        padding: 0.9vh 3.2vh;
     }
 
     #btn:hover {
-        padding: 1vh 4vh;
+        padding: 1.2vh 4.2vh;
     }
 
     #btn:focus {
-        padding: 1.1vh 4vh;
+        padding: 1.3vh 4.2vh;
+    }
+
+    #playAgainBtn {
+        font-size: 1.4rem;
+        padding: 2.5vw 3vw;
+    }
+
+    #playAgainBtn:hover {
+        padding: 2.7vw 3.5vw;
+    }
+
+    #playAgainBtn:focus {
+        padding: 2.8vw 3.5vw;
     }
 
     .btn {
@@ -420,7 +490,7 @@ footer .img {
     }
 
     footer {
-        height: 31vh;
+        height: 35.5vh;
     }
 
     #win {
@@ -436,15 +506,33 @@ footer .img {
     }
 
     #btn {
-        font-size: 6vw;
+        font-size: 8vw;
         padding: 2.3vw 6vw;
     }
-    #btn:hover{
-        padding: 2.4vw 6.5vw;
+
+    #btn:hover {
+        padding: 2.4vw 7vw;
         outline: 3px outset rgb(246, 255, 0);
     }
-    #btn:focus{
-        padding: 2.4vw 6.5vw;
+
+    #btn:focus {
+        padding: 2.4vw 7vw;
         outline: 3px outset rgb(246, 255, 0);
+    }
+
+    #playAgainBtn {
+        left: 45%;
+        font-size: 1.5rem;
+        padding: 3.2vw 3.5vw;
+    }
+
+    #playAgainBtn:hover {
+        left: 45%;
+        padding: 3.4vw 4.2vw;
+    }
+
+    #playAgainBtn:focus {
+        left: 45%;
+        padding: 3.6vw 4.2vw;
     }
 }
