@@ -132,6 +132,8 @@ function resetGame() {
     btn.style.display = "block"
     btn2.style.display = "none"
     btn.style.left = "0px"
+    input = "";
+    output = "";
     gameActive = true;
     CompTurn()
     console.log(output);
