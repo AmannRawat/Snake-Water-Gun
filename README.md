@@ -1,2 +1,3 @@
-# Snake-Water-Gun
- 
+Snake-Water-Gun is a SpongeBob theme based Game offers a simple and engaging game where users can choose between a snake, water, or gun, similar to the classic rock-paper-scissors game. The design is straightforward, with a clean interface that focuses on gameplay. The "Play" button is prominently displayed, making it easy for users to start the game. The site is well-structured and responsive.
+
+Through developing the 'Snake Water Gun' project, I gained hands-on experience with HTML, CSS, and JavaScript. I learned how to structure a webpage using HTML, style it with CSS for a clean and responsive design, and implement the game logic using JavaScript. This project helped me understand the interaction between front-end technologies and how to create an interactive web experience!
