@@ -91,7 +91,7 @@ btn.addEventListener("click", () => {
             btn2.style.display = "block"
             btn.style.display = "none"
             btn2.style.left = "0%"
-        }, 750);
+        }, 720);
     }
     else if (input == "Snake" && output == "Gun" || input == "Water" && output == "Snake" || input == "Gun" && output == "Water") {
         let lose = document.getElementById('lose');
@@ -104,7 +104,7 @@ btn.addEventListener("click", () => {
             btn2.style.display = "block"
             btn.style.display = "none"
             btn2.style.left = "0%"
-        }, 750);
+        }, 720);
     }
     else if (input == output) {
         let tie = document.getElementById('tie');
@@ -115,7 +115,7 @@ btn.addEventListener("click", () => {
             btn.style.display = "none"
             btn2.style.display = "block"
             btn2.style.left = "0%"
-        }, 750);
+        }, 720);
     }
     else {
         alert("Choose one")
