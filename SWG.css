@@ -490,11 +490,11 @@ footer .img {
 
 @media only screen and (max-width: 450px) {
     .text1 {
-        text-shadow: 4px 4px 6px rgb(255, 42, 42);   
+        text-shadow: 4px 4px 5px rgb(255, 30, 30);   
     }
     .text2 {
         bottom: 10px;
-        text-shadow: 4px 4px 6px rgb(61, 84, 255);
+        text-shadow: 4px 4px 5px rgb(42, 67, 254);
     }
 
     #img1 {
