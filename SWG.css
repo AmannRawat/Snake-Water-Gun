@@ -4,7 +4,6 @@
     font-family: "Patrick Hand", cursive;
     font-weight: 800;
     font-style: normal;
-
 }
 
 body {
@@ -13,9 +12,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    /* cursor: url("Assets/spongebob-cursor.cur"),pointer !important;  */
 }
 
 .text1 {
+    cursor: url('Assets/spongebob-cursor.png w'), auto;
     color: white;
     text-align: center;
     font-size: 5.5rem;
@@ -23,12 +24,14 @@ body {
 }
 
 .text2 {
+    cursor: pointer;
     color: white;
     text-align: center;
     font-size: 2.4rem;
     position: relative;
     margin-top: 2.2rem;
-    text-shadow: 4px 4px 5px  rgb(0 30 255);
+    /* bottom: 5px; */
+    text-shadow: 4px 4px 5px rgb(0 30 255);
 }
 
 .bear1 {
@@ -84,6 +87,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* bottom: 40px; */
     position: relative;
     gap: 16vw;
     height: 80vh;
@@ -104,7 +108,7 @@ body {
 
 #img1:hover {
     width: 11.5%;
-    box-shadow: -1px 0px 20px 12px rgb(70, 148, 5);
+    box-shadow: -1px 0px 20px 18px rgb(70, 148, 5);
     position: relative;
     bottom: 5px;
     transition: all .5s linear;
@@ -112,7 +116,7 @@ body {
 
 #img1:focus {
     width: 12%;
-    box-shadow: -1px 0px 20px 15px rgb(70, 148, 5);
+    box-shadow: -1px 0px 20px 18px rgb(70, 148, 5);
     position: relative;
     bottom: 5px;
     transition: all .5s linear;
@@ -127,7 +131,7 @@ body {
 
 #img2:hover {
     width: 19.5%;
-    box-shadow: 0px 0px 20px 15px rgb(13 193 242);
+    box-shadow: 0px 0px 20px 18px rgb(13 193 242);
     position: relative;
     bottom: 5px;
     transition: all .5s linear;
@@ -135,7 +139,7 @@ body {
 
 #img2:focus {
     width: 20%;
-    box-shadow: 0px 0px 20px 15px rgb(13 193 242);
+    box-shadow: 0px 0px 20px 18px rgb(13 193 242);
     position: relative;
     bottom: 5px;
     transition: all .5s linear;
@@ -150,7 +154,7 @@ body {
 
 #img3:hover {
     width: 22.2%;
-    box-shadow: 0px 0px 20px 15px rgb(101 54 20);
+    box-shadow: 0px 0px 20px 18px rgb(101 54 20);
     position: relative;
     bottom: 5px;
     transition: all .5s linear;
@@ -158,7 +162,7 @@ body {
 
 #img3:focus {
     width: 23%;
-    box-shadow: 0px 0px 20px 15px rgb(101 54 20);
+    box-shadow: 0px 0px 20px 18px rgb(101 54 20);
     position: relative;
     bottom: 5px;
     transition: all .5s linear;
@@ -196,22 +200,22 @@ body {
     padding: 0.8vw 4vw;
     position: relative;
     bottom: 2px;
-    left: 1px;
+    left: 6px;
     outline: 4px outset rgb(246, 255, 0);
     background-color: rgb(255, 0, 51);
-    transition: outline .1s linear , left 0.7s linear;
+    transition: outline .1s linear, left 0.7s linear;
 }
 
 #playAgainBtn {
     z-index: 2;
     display: none;
-    left: 0px;
+    left: -48%;
     font-size: 2vw;
     padding: 1.5vw 2vw;
     border-radius: 15px;
     background-color: rgb(233 31 72);
     border: 2px solid rgb(0, 0, 0);
-    position: absolute;
+    position: relative;
     color: white;
     cursor: pointer;
     transition: all 1s linear;
@@ -250,6 +254,7 @@ footer {
 }
 
 .text3 {
+    cursor: pointer;
     text-shadow: 4px 4px 5px rgb(163 2 202);
 }
 
@@ -484,13 +489,55 @@ footer .img {
 }
 
 @media only screen and (max-width: 450px) {
+    .text2 {
+        bottom: 10px;
+    }
+
+    #img1 {
+        width: 25%;
+    }
+
+    #img1:hover {
+        width: 25.5%;
+    }
+
+    #img1:focus {
+        width: 26%;
+    }
+
+    #img2 {
+        width: 43%;
+    }
+
+    #img2:hover {
+        width: 43.5%;
+    }
+
+    #img2:focus {
+        width: 44%;
+    }
+
+    #img3 {
+        width: 40%;
+    }
+
+    #img3:hover {
+        width: 40.2%;
+    }
+
+    #img3:focus {
+        width: 41%;
+    }
+
     .choices {
+        bottom: 15px;
         height: 42vh;
-        left: 10px;
+        left: 13px;
+        gap: 3vw;
     }
 
     footer {
-        height: 35.5vh;
+        height: 33.55vh;
     }
 
     #win {

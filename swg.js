@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
     }
     // Start playing when the user interacts with the page
     document.body.addEventListener('click', () => {
-        // Game.play();
+        Game.play();
         Game.loop = true;
     }, { once: true }); // Ensures it only triggers once
 });
@@ -84,34 +84,37 @@ btn.addEventListener("click", () => {
     if (input == "Snake" && output == "Water" || input == "Water" && output == "Gun" || input == "Gun" && output == "Snake") {
         let win = document.getElementById('win');;
         winSound.play();
-        btn2.style.display = "block"
         win.style.display = "block"
-        btn.style.left = "59%"
-        btn2.style.left = "44%"
+        btn.style.left = "42%"
+
         setTimeout(() => {
+            btn2.style.display = "block"
             btn.style.display = "none"
+            btn2.style.left = "0%"
         }, 750);
     }
     else if (input == "Snake" && output == "Gun" || input == "Water" && output == "Snake" || input == "Gun" && output == "Water") {
         let lose = document.getElementById('lose');
         loseSound.play();
-        btn2.style.display = "block"
+
         lose.style.display = "block"
-        btn.style.left = "59%"
-        btn2.style.left = "44%"
+        btn.style.left = "42%"
+
         setTimeout(() => {
+            btn2.style.display = "block"
             btn.style.display = "none"
+            btn2.style.left = "0%"
         }, 750);
     }
     else if (input == output) {
         let tie = document.getElementById('tie');
         tieSound.play();
-        btn2.style.display = "block"
         tie.style.display = "block"
-        btn.style.left = "59%"
-        btn2.style.left = "44%"
+        btn.style.left = "42%"
         setTimeout(() => {
             btn.style.display = "none"
+            btn2.style.display = "block"
+            btn2.style.left = "0%"
         }, 750);
     }
     else {
